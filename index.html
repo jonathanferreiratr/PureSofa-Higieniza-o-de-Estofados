@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureSofa - Higienização de Estofados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/logo-trasparente.webp" alt="PureSofa Logo" class="logo">
+            </div>
+            <div class="tagline">Higienização de estofados</div>
+            <p>cuidados na limpeza que elevam seu conforto</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu estofado limpo e higienizado com cuidado</h1>
+            <p>Serviço profissional que transforma seus móveis</p>
+            <a href="#calculator" class="btn">Solicitar Orçamento</a>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('img/imagem-sofa.avif');"></div>
+                    <div class="service-content">
+                        <h3>Sofás</h3>
+                        <p>Limpeza profunda e higienização de sofás de todos os tipos de tecido e couro.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('img/cadeira-imagem.webp');"></div>
+                    <div class="service-content">
+                        <h3>Cadeiras</h3>
+                        <p>Higienização de cadeiras estofadas para escritório e residência.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('img/imagem-cama.avif');"></div>
+                    <div class="service-content">
+                        <h3>Colchões</h3>
+                        <p>Limpeza e sanitização de colchões para melhor qualidade do seu sono.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <section id="calculator" class="calculator">
+        <div class="container">
+            <h2>Solicite um Orçamento</h2>
+            <form id="budget-form">
+                <div class="form-group">
+                    <label for="client-name">Seu Nome</label>
+                    <input type="text" id="client-name" placeholder="Digite seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-phone">Telefone para Contato</label>
+                    <input type="tel" id="client-phone" placeholder="(61) 99999-9999" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="client-address">Endereço do Serviço</label>
+                    <input type="text" id="client-address" placeholder="Digite o endereço onde será realizado o serviço" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-type">Tipo de Serviço</label>
+                    <select id="service-type" required>
+                        <option value="">Selecione o tipo de serviço</option>
+                        <option value="sofa">Sofá</option>
+                        <option value="chair">Cadeira</option>
+                        <option value="mattress">Colchão</option>
+                        <option value="car">Estofado Automotivo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item-size">Tamanho do Item</label>
+                    <select id="item-size" required>
+                        <option value="">Selecione o tamanho</option>
+                        <option value="small">Pequeno (até 1,5m)</option>
+                        <option value="medium">Médio (1,5m - 2,2m)</option>
+                        <option value="large">Grande (acima de 2,2m)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="material">Tipo de Material</label>
+                    <select id="material" required>
+                        <option value="">Selecione o material</option>
+                        <option value="fabric">Tecido</option>
+                        <option value="leather">Couro</option>
+                        <option value="suede">Suede</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="condition">Condição do Item</label>
+                    <select id="condition" required>
+                        <option value="">Selecione a condição</option>
+                        <option value="normal">Limpeza regular</option>
+                        <option value="dirty">Sujo (limpeza intensiva)</option>
+                        <option value="very-dirty">Muito sujo (limpeza profunda)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-info">Informações Adicionais</label>
+                    <textarea id="additional-info" placeholder="Descreva qualquer informação adicional que possa ser útil para o orçamento" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Solicitação</button>
+            </form>
+            
+            <div id="result" class="result">
+                <h3>Solicitação Enviada com Sucesso!</h3>
+                <p>O prestador de serviços entrará em contato pelo WhatsApp para fornecer o valor do serviço.</p>
+                <a href="#" id="whatsapp-link" class="btn" style="margin-top: 20px;">
+                    <i class="fab fa-whatsapp"></i> Falar Diretamente pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>(61) 99140-9064</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário de Atendimento</h3>
+                    <p>Seg a Sex: 8h às 18h</p>
+                    <p>Sábado: 8h às 12h</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Área de Atuação</h3>
+                    <p>Brasília e Entorno</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p> 2025 PureSofa - Higienização de Estofados. Todos os direitos reservados. Criado por </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
