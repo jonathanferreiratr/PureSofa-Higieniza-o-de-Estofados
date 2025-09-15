@@ -28,7 +28,7 @@
                 
                 const message = `Olá! Gostaria de solicitar um orçamento para higienização de estofados.\n\n*Dados do Cliente:*\nNome: ${clientName}\nTelefone: ${clientPhone}\nEndereço: ${clientAddress}\n\n*Detalhes do Serviço:*\nTipo: ${serviceTypeText}\nTamanho: ${itemSizeText}\nMaterial: ${materialText}\nCondição: ${conditionText}\n\nInformações Adicionais: ${additionalInfo || 'Nenhuma'}\n\nPor favor, informe o valor do serviço.`;
                 const encodedMessage = encodeURIComponent(message);
-                whatsappLink.href = `https://wa.me/5561991409064?text=${encodedMessage}`;
+                whatsappLink.href = `https://wa.me/5561991616986?text=${encodedMessage}`;
                 
                 // Exibir o resultado
                 resultDiv.style.display = 'block';
@@ -36,4 +36,5 @@
                 // Rolar suavemente até o resultado
                 resultDiv.scrollIntoView({ behavior: 'smooth' });
             });
+
         });
