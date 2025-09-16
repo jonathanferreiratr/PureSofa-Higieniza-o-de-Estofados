@@ -3,6 +3,12 @@
             const resultDiv = document.getElementById('result');
             const whatsappLink = document.getElementById('whatsapp-link');
             
+            // Substitua pelo seu nome de usuário do Instagram
+            const instagramLinks = document.querySelectorAll('a[href*="https://www.instagram.com/puresofabsb/"]');
+            instagramLinks.forEach(link => {
+                link.href = link.href.replace('seuinstagram', '@puresofabsb'); // Substitua "seuperfil" pelo seu @ do Instagram
+            });
+            
             budgetForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
@@ -36,5 +42,4 @@
                 // Rolar suavemente até o resultado
                 resultDiv.scrollIntoView({ behavior: 'smooth' });
             });
-
         });
